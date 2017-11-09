@@ -13,3 +13,6 @@ yarn-error.log
 
 #Local
 historial_procedimiento
+src/App_pug.vue
+src/backup__app.vue
+src/backup_css
