@@ -1,6 +1,6 @@
 <template>  
   <div id="app">
-    <img src="/assets/logo.png">
+    <img src="https://jaimediaz817.github.io/platzimusic-pry/dist/logo.png">
     <h1>Platzimusic Local</h1>
     <!-- Listado de Paises
     v-model:  hacer bind a un atributo de la vista, selectedCountry
