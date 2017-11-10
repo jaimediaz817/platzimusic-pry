@@ -1,6 +1,6 @@
 .DS_Store
 node_modules/
-dist/
+#dist/
 npm-debug.log
 yarn-error.log
 
@@ -12,7 +12,8 @@ yarn-error.log
 *.sln
 
 #Local
-historial_procedimiento
+historial_procedimiento 
 src/App_pug.vue
 src/backup__app.vue
 src/backup_css
+src/backup__webpack.config.js
