@@ -1,5 +1,5 @@
 <template>
-  <li class="artist">
+    <li class="artist">
         <h2>
             <a :href="artist.url" target="_blank">{{artist.name}}</a>
         </h2>
@@ -14,7 +14,7 @@
                         ]
             -->                        
             <img :src="artist.image[2]['#text']" alt="image Test">       
-  </li>
+    </li>
 </template>
 
 <script>

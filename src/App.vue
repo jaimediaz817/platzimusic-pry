@@ -13,10 +13,8 @@
       </option>
     </select>
     <!-- Otro componente creado -->
-    <spinner
-      v-show="loading"
-    >
-    </spinner>
+    <spinner v-show="loading"></spinner>
+    <!-- Listado de artistas dentro del componente -->
     <ul>
       <artist v-for="artist in artists" v-bind:artist="artist" v-bind:key="artist.mbid"></artist>
     </ul>
@@ -28,7 +26,7 @@
   import Artist from './components/Artist.vue'
   import Spinner from './components/Spinner.vue'
   import getArtists from './api'  
-
+  // método a exportar
   export default {
     name: 'app',
     data () {
@@ -43,11 +41,8 @@
         loading:true
         /* 
         borrando artistas hardcodeados:
-          {name: 'artsits1'},
-          {name: 'artsits2'},
-          {name: 'artsits3'},
-          {name: 'artsits4'},
-          {name: 'artsits5'}      
+          {name: 'artsits1'},{name: 'artsits2'},
+          {name: 'artsits3'},{name: 'artsits4'},{name: 'artsits5'}      
         */
       }
     },
@@ -97,21 +92,17 @@
     color: #2c3e50;
     margin-top: 60px;
   }
-
   h1, h2 {
     font-weight: normal;
   }
-
   ul {
     list-style-type: none;
     padding: 0;
   }
-
   li {
     display: inline-block;
     margin: 0 10px;
   }
-
   a {
     color: #42b983;
   }
